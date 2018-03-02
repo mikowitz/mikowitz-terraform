@@ -1,0 +1,7 @@
+graph.png
+terraform.tfstate.backup
+.terraform/
+.idea
+*.out
+*.swp
+.envrc
