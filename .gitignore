@@ -5,4 +5,3 @@ terraform.tfstate.backup
 *.out
 *.swp
 .envrc
-terraform.tfstate
