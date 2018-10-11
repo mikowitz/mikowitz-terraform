@@ -17,3 +17,21 @@ resource "aws_internet_gateway" "essentials" {
     Name = "essentials"
   }
 }
+
+resource "aws_route_table" "essentials_public" {
+  vpc_id = "${aws_vpc.essentials.id}"
+
+  tags {
+    Name = "essentials"
+    role = "public"
+  }
+}
+
+resource "aws_route_table" "essentials_private" {
+  vpc_id = "${aws_vpc.essentials.id}"
+
+  tags {
+    Name = "essentials"
+    role = "private"
+  }
+}
